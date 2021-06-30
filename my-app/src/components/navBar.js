@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'centered',
         [theme.breakpoints.up('sm')]: {
             display: 'block',
-            marginLeft: 100,
+            marginLeft: 500,
 
         },
     },

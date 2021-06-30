@@ -3,12 +3,12 @@ import { makeStyles, Paper, Tabs, Tab } from '@material-ui/core';
 
 
 const useStyles = makeStyles({
-    root: {
-      flexGrow: 1,
-      maxWidth:450,
-      margin:"0 auto",
-      marginTop:'20px',
-    },
+    // root: {
+    //   flexGrow: 1,
+    //   maxWidth:450,
+    //   margin:"0 auto",
+    //   marginTop:'20px',
+    // },
   });
 
 export default function SelectionTab(props) {
