@@ -4,19 +4,21 @@ import  AllCountries from './allCountries'
 import Graph from './graph' 
 import Map from './map'
 
-export default function InfoPanel(currentScreen){
+export default function InfoPanel({currentScreen}){
+console.log(currentScreen)
+  if (currentScreen[0] === 0)
+  return (
+    <GlobalStats />)
 
-  if (currentScreen[0] === 0 )
-  return(<GlobalStats/>)
-
-  else if (currentScreen[0] === 1)
-  return (<AllCountries/>)
-
+else if (currentScreen[0] === 1)
+  return (<AllCountries />
+  )
   else if (currentScreen[0] === 2)
-  return (<Graph/>)
-
+  return (<Graph />
+  )
+;
   else if (currentScreen[0] === 3)
-  return (<Map/>)
+  return (<Map/>);
 
-  else return(<GlobalStats/>)
+  else return(<GlobalStats/>);
 }
