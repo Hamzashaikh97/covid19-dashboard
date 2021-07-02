@@ -3,12 +3,12 @@ import { makeStyles, Paper, Tabs, Tab } from '@material-ui/core';
 
 
 const useStyles = makeStyles({
-    // root: {
-    //   flexGrow: 1,
-    //   maxWidth:450,
-    //   margin:"0 auto",
-    //   marginTop:'20px',
-    // },
+    root: {
+      flexGrow: 1,
+      maxWidth:1050,
+      margin:"0 auto",
+      marginTop:'20px',
+    },
   });
 
 export default function SelectionTab(props) {
@@ -34,7 +34,7 @@ export default function SelectionTab(props) {
                 onChange={handleChange}
                 centered
             >
-                <Tab label="GLOBAL STATS" />
+                <Tab label="GLOBAL STATISTIC" />
                 <Tab label="COUNTRIES" />
                 <Tab label="GRAPH" />
                 <Tab label="MAP" />
