@@ -2,7 +2,7 @@ import React from 'react';
 import GlobalStats from './globalStats';
 import  AllCountries from './allCountries'
 import Graph from './graph' 
-import Map from './map'
+import MyMap from './map'
 
 export default function InfoPanel({currentScreen}){
 console.log(currentScreen)
@@ -18,7 +18,7 @@ else if (currentScreen[0] === 1)
   )
 ;
   else if (currentScreen[0] === 3)
-  return (<Map/>);
+  return (<MyMap/>);
 
   else return(<GlobalStats/>);
 }
