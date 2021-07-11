@@ -26,17 +26,22 @@ function MyMap(props) {
         async function callApi() {
             let response = await fetch('https://corona.lmao.ninja/v2/countries?yesterday&sort')
             let data = await response.json();
-            console.log(data[0])
+            // console.log(data[0].countryInfo)
             setglobalData(data);
         }
         callApi();
-    }, [])
+    })
 
     function displayMarkers() {
-        return globalData.map((store, index) => {
+           return globalData.map((store, index) => {
+                // console.log(store.countryInfo.lat);
+                // console.log(store.countryInfo.long);
+
+            // const {countryInfo: { lat , long}} = store;
+
             return <Marker key={index} id={index} position={{
-                lat: store.lat,
-                long: store.long
+                lat: store.countryInfo.lat,
+                lng: store.countryInfo.long,
             }}
                 onClick={() => console.log("You clicked me!")} />
         })
